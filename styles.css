@@ -20,7 +20,7 @@ nav a:hover{color:var(--ink)}
 .menu{display:none}
 
 /* hero */
-.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding-block:76px 64px;min-height:78vh}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center;padding-block:56px 56px;min-height:0}
 .eyebrow,.kicker,.micro{font-size:12px;font-weight:700;letter-spacing:.18em;color:var(--accent);margin:0 0 22px}
 .eyebrow{display:flex;align-items:center;gap:10px}
 .eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(242,180,74,.18)}
@@ -30,7 +30,7 @@ nav a:hover{color:var(--ink)}
 .micro span{margin-inline:6px;color:var(--accent)}
 .portrait{margin:0;position:relative}
 .portrait:before{content:'';position:absolute;inset:18px -18px -18px 18px;border:1.5px solid var(--accent);border-radius:26px;z-index:0}
-.portrait img{position:relative;z-index:1;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 20%;border-radius:26px;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.portrait img{position:relative;z-index:1;width:100%;max-height:560px;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:26px;box-shadow:0 30px 70px rgba(0,0,0,.5)}
 
 /* sections */
 .section{padding-block:96px}
