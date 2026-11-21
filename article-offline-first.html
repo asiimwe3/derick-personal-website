@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0f17">
+<title>Why Ugandan software has to work offline first | Asiimwe Derick</title>
+<meta name="description" content="Most software assumes fast internet and a card. Most Ugandan businesses have neither. How to design software for the conditions that actually exist, by Asiimwe Derick.">
+<meta name="author" content="Asiimwe Derick">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://asiimwe3.github.io/derick-personal-website/article-offline-first.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Asiimwe Derick">
+<meta property="og:title" content="Why Ugandan software has to work offline first | Asiimwe Derick">
+<meta property="og:description" content="Most software assumes fast internet and a card. Most Ugandan businesses have neither. How to design software for the conditions that actually exist, by Asiimwe Derick.">
+<meta property="og:url" content="https://asiimwe3.github.io/derick-personal-website/article-offline-first.html">
+<meta property="og:image" content="https://asiimwe3.github.io/derick-personal-website/assets/hoodie-laptop.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Ugandan software has to work offline first | Asiimwe Derick">
+<meta name="twitter:description" content="Most software assumes fast internet and a card. Most Ugandan businesses have neither. How to design software for the conditions that actually exist, by Asiimwe Derick.">
+<link rel="icon" href="assets/hoodie-laptop-sq.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=7">
+<link rel="stylesheet" href="assets/site.css?v=1">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Asiimwe Derick", "alternateName": "Derick", "jobTitle": "Social entrepreneur, Founder of DeryCode Technologies, CEO of Sageco Evergreen", "url": "https://asiimwe3.github.io/derick-personal-website/", "image": "https://asiimwe3.github.io/derick-personal-website/assets/hoodie-laptop.webp", "email": "derickasiimwe849@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Kyenjojo", "addressCountry": "UG"}, "sameAs": ["https://github.com/asiimwe3", "https://derycode.online"], "worksFor": [{"@type": "Organization", "name": "DeryCode Technologies", "url": "https://derycode.online"}, {"@type": "Organization", "name": "Sageco Evergreen", "url": "https://sageco-evergreen.vercel.app/"}], "knowsAbout": ["social entrepreneurship", "software development", "real estate technology", "impact investing", "offline-first software"], "birthDate": "2006-01-09", "birthPlace": {"@type": "Place", "name": "Kyenjojo, Uganda"}}</script>
+<script src="assets/site.js?v=1" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header">
+ <a class="brand" href="index.html"><b>D</b> Derick<span>.</span></a>
+ <nav id="primaryNav">
+  <a href="about.html">About</a><a href="ventures.html">Ventures</a><a href="projects.html">Projects</a><a href="writing.html">Writing</a><a href="vision.html">Vision</a><a href="contact.html">Contact</a>
+  <div class="nav-more"><button type="button" aria-expanded="false">More ▾</button>
+   <div class="drop"><a href="journey.html">Journey &amp; experience</a><a href="skills.html">Skills &amp; CV</a><a href="impact.html">Impact &amp; leadership</a><a href="speaking.html">Speaking &amp; media</a><a href="gallery.html">Gallery &amp; life</a><a href="services.html">Services &amp; collaboration</a><a href="investors.html">For investors</a><a href="mediakit.html">Media kit &amp; archive</a><a href="assistant.html">Ask Derick AI</a><a href="sitemap.html">Site map</a></div>
+  </div>
+  <a class="nav-cta" href="contact.html">Say hello</a>
+ </nav>
+ <div class="tools">
+  <button class="icon-btn" data-search-open type="button" aria-label="Search this site">⌕</button>
+  <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch colour theme">☀</button>
+  <button class="menu" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+ </div>
+</header>
+
+<div class="search-wrap" id="searchWrap" role="dialog" aria-modal="true" aria-label="Search">
+ <div class="searchbox">
+  <input id="searchInput" type="search" placeholder="Search pages, projects, writing, sections…" aria-label="Search">
+  <p class="hint">Press <b>/</b> to open search anywhere. Esc closes.</p>
+  <div id="searchResults"></div>
+ </div>
+</div>
+
+<main id="main">
+<div class="wrap crumbs"><a href="index.html">Home</a><span>/</span><a href="writing.html">Writing</a><span>/</span>Technology</div>
+<section class="page-head wrap">
+ <p class="eyebrow"><i></i> TECHNOLOGY · ESSAY</p>
+ <h1>Why Ugandan software<br><em>has to work offline first.</em></h1>
+ <p class="lead">Most software sold here assumes fast internet, a card and someone on staff to administer it. Most Ugandan businesses have none of those things. Designing for that reality is not a compromise, it is the product.</p>
+ 
+</section>
+<section class="section wrap"><div class="prose">
+ <p>Walk into a shop in Kyenjojo and watch what happens when the internet drops. The till still works because it is a book. The stock still counts because it is in the owner's head. The business keeps running because it never depended on a connection in the first place.</p>
+ <p>Then watch the same shop try a cloud point-of-sale system sold to them by someone in Kampala. It works beautifully until the line drops, and then it is a very expensive paperweight with a login screen.</p>
+ <h3>The assumption nobody states</h3>
+ <p>Most software is designed against an implicit checklist: reliable electricity, reliable broadband, a bank card, an English-speaking administrator, and someone who can debug a sync error. In much of Uganda, one or more of those is missing on any given day.</p>
+ <p>When a product fails here, the usual explanation is "the market is not ready". That is almost always wrong. The product was not ready for the market.</p>
+ <h3>What offline-first actually means</h3>
+ <p>Offline-first is not a feature you bolt on. It changes the architecture: the local device is the source of truth, and the network is an optimisation. Concretely, that means three decisions.</p>
+ <ul>
+  <li><strong>Local writes always succeed.</strong> A sale, a stock count, a student payment records immediately on the device and syncs when it can.</li>
+  <li><strong>Conflicts are resolved by rules, not by asking the user.</strong> A shopkeeper should never be shown a merge dialogue. The system decides, and logs what it decided.</li>
+  <li><strong>The interface tells the truth about state.</strong> "Saved on this phone, waiting to sync" is honest. A spinner that never resolves is not.</li>
+ </ul>
+ <h3>Price is part of the design</h3>
+ <p>The second assumption is money. If software costs more than the problem it solves, it is not a solution; it is a subscription the business will cancel in month three. Pricing for the person you claim to serve means pricing against their margin, not against a competitor's list price.</p>
+ <h3>Support is the last mile</h3>
+ <p>A handover that ends with a link is not a handover. Small businesses do not have an IT department, so the person who built the system has to be reachable after launch. That is not generosity; it is what makes the sale real.</p>
+ <h3>The result</h3>
+ <p>When you get this right, the technology disappears into the business. The owner keeps records they can trust, the numbers are available when a loan officer asks, and nobody has to explain what a sync conflict is. That is what <a href="ventures.html#derycode">DeryCode</a> builds, and it is why <a href="ventures.html#products">DeryAccount</a> was designed around the connection dropping rather than assuming it will not.</p>
+ <blockquote>Software that needs perfect conditions is software for someone else's country.</blockquote>
+ <p><a class="btn ghost" href="writing.html">Back to all writing</a></p>
+</div></section>
+</main>
+<footer class="foot">
+ <div class="wrap foot-grid">
+  <div>
+   <a class="brand" href="index.html" style="margin-bottom:14px"><b>D</b> Derick<span>.</span></a>
+   <p>Asiimwe Derick, social entrepreneur from Kyenjojo, Uganda. Founder of DeryCode Technologies and CEO of Sageco Evergreen. Building for people, at scale.</p>
+   <p><a href="mailto:derickasiimwe849@gmail.com">derickasiimwe849@gmail.com</a><br><a href="https://wa.me/256762306675" target="_blank" rel="noopener">WhatsApp 0762 306 675</a></p>
+  </div>
+  <div><h4>Profile</h4><a href="about.html">About</a><a href="journey.html">Journey</a><a href="ventures.html">Ventures</a><a href="projects.html">Projects</a><a href="skills.html">Skills &amp; CV</a></div>
+  <div><h4>Work</h4><a href="writing.html">Writing</a><a href="vision.html">Vision</a><a href="impact.html">Impact</a><a href="speaking.html">Speaking</a><a href="gallery.html">Gallery</a></div>
+  <div><h4>More</h4><a href="investors.html">Investors</a><a href="services.html">Services</a><a href="mediakit.html">Media kit</a><a href="assistant.html">Ask Derick AI</a><a href="sitemap.html">Site map</a>
+   <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="disclaimer.html">Disclaimer</a></div>
+ </div>
+ <div class="wrap foot-btm">
+  <span>© <span id="year">2026</span> Asiimwe Derick. All rights reserved.</span>
+  <span>Built by <a href="https://derycode.online" target="_blank" rel="noopener" style="display:inline">DeryCode Technologies</a> · <a href="https://wa.me/256762306675" target="_blank" rel="noopener" style="display:inline">Need a site like this? WhatsApp 0762 306 675</a></span>
+ </div>
+</footer>
+</body>
+</html>
