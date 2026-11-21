@@ -214,13 +214,13 @@ def add(slug, title, desc, keys, body):
 # ============================== HOME ==============================
 home = page_head_block("Home", "", "KYENJOJO, UGANDA",
   "I'm Derick.<br><em>I build for people.</em>",
-  "A young social entrepreneur from western Uganda. Founder of DeryCode Technologies, CEO of Sageco Evergreen. Two companies, one purpose: to change people's lives and turn that change into mass social impact.")
+  "A young social entrepreneur born in Fort Portal, western Uganda. Founder of DeryCode Technologies, CEO of Sageco Evergreen, and building more ventures than one page can hold. Many businesses, one purpose: to change people's lives and turn that change into mass social impact.")
 home += f'''
 <section class="section wrap" style="padding-top:10px">
  <div class="two">
   <div>
-   <p class="lead">Born 9 January 2006, in Kyenjojo. Twenty years old, still finishing school. Running two companies in the hours school leaves me, and telling you that plainly because it is the constraint I actually build under.</p>
-   <p class="roles" style="margin-top:18px">FOUNDER · DERYCODE TECHNOLOGIES <span>|</span> CEO · SAGECO EVERGREEN</p>
+   <p class="lead">Born 9 January 2006, in Fort Portal. Twenty years old, still finishing school. Running several ventures in the hours school leaves me, and telling you that plainly because it is the constraint I actually build under.</p>
+   <p class="roles" style="margin-top:18px">FOUNDER · DERYCODE TECHNOLOGIES <span>|</span> CEO · SAGECO EVERGREEN <span>|</span> AND MORE VENTURES</p>
    <div class="btn-row" style="justify-content:flex-start;margin-top:22px">
     <a class="btn" href="about.html">Read my story</a>
     <a class="btn ghost" href="assets/derick-asiimwe-cv.pdf" download>Download CV</a>
@@ -230,6 +230,15 @@ home += f'''
  </div>
 </section>
 '''
+
+
+home += '''<section class="section wrap" style="padding-top:0">
+ <div class="quotes">
+  <blockquote>Smart people are doubted at the start. <em>Results do the talking.</em></blockquote>
+  <blockquote>Nobody funds a dream. <em>They fund evidence.</em></blockquote>
+  <blockquote>Build like a billionaire. <em>Serve like a servant.</em></blockquote>
+ </div>
+</section>'''
 
 home += section("explore", "EXPLORE", "One place for<br><em>everything I do.</em>",
   cards([
@@ -256,7 +265,7 @@ home += section("mission-home", "MISSION", "To change people's lives.<br><em>At 
 <p style="margin-top:18px"><a class="btn ghost" href="about.html#mission">Read the full mission, vision and values</a></p>
 ''', band=True)
 
-home += section("ventures-home", "WHAT I LEAD", "Two companies.<br><em>One purpose.</em>", f'''
+home += section("ventures-home", "WHAT I LEAD", "The ventures<br><em>I lead.</em>", f'''
 <div class="cards">
  <a class="card" href="ventures.html#derycode"><span class="tag">Founder</span><h3>DeryCode Technologies</h3><p>Software for Ugandan businesses that has to survive real conditions: weak internet, small budgets, no IT department. Offline-first systems and websites, built and supported by the person who wrote the code.</p><span class="more">derycode.online ↗</span></a>
  <a class="card" href="ventures.html#sageco"><span class="tag">CEO</span><h3>Sageco Evergreen</h3><p>A property platform built to stop the fear in buying land: verified listings, GPS boundaries, escrow-protected payments and eco-smart development.</p><span class="more">The platform ↗</span></a>
@@ -365,12 +374,12 @@ about += section("mission", "MISSION, VISION &amp; VALUES", "The frame everythin
 
 about += section("education", "EDUCATION &amp; LEARNING", "School, and everything after it", f'''
 <div class="prose">
- <p>Formal education is in progress: he is completing school while running two companies. The rest of his learning is public and checkable in the work itself, software engineering, product design, payments, property verification and the commercial side of running a company.</p>
+ <p>Formal education is in progress: he is completing school while running several ventures. The rest of his learning is public and checkable in the work itself, software engineering, product design, payments, property verification and the commercial side of running a company.</p>
 </div>
 {edit("Add your schools and qualifications", "Add your school name, level and expected completion year, plus any certificates or courses (for example programming, accounting or business programmes). This is the one section of the site that must come from you, not from inference.")}
 <div class="cards">
  <div class="card"><span class="tag">Learning</span><h3>Self-taught engineering</h3><p>Web and software development learned by shipping: HTML, CSS, JavaScript, React and Next.js, Python, Postgres and Supabase, deployment on Vercel and GitHub Pages.</p></div>
- <div class="card"><span class="tag">Learning</span><h3>Business by operating</h3><p>Pricing, client care, payroll of trust and the discipline of running two companies: learned in the market rather than in a classroom.</p></div>
+ <div class="card"><span class="tag">Learning</span><h3>Business by operating</h3><p>Pricing, client care, payroll of trust and the discipline of running several ventures: learned in the market rather than in a classroom.</p></div>
  <div class="card"><span class="tag">Learning</span><h3>Always next</h3><p>Currently deepening: AI systems, payments infrastructure, property law basics for product design, and investor communication.</p></div>
 </div>
 ''')
@@ -401,7 +410,7 @@ journey += section("timeline", "TIMELINE", "My journey", f'''
 
 journey += section("career", "CAREER &amp; PROFESSIONAL PROFILE", "What I do professionally", f'''
 <div class="prose">
- <p>Derick works as a founder and operator, not a consultant on the side. Professionally he runs two companies at once: one that builds software for other businesses, and one that uses software to fix a market he grew up watching fail.</p>
+ <p>Derick works as a founder and operator, not a consultant on the side. Professionally he runs several ventures at once: one that builds software for other businesses, and one that uses software to fix a market he grew up watching fail.</p>
  <p><strong>Founder &amp; CEO, DeryCode Technologies.</strong> Leads product, engineering and client delivery: websites, offline-first business systems, AI tooling and digital presence for Ugandan businesses. Responsible for scoping, pricing, building, deploying and supporting.</p>
  <p><strong>CEO, Sageco Evergreen.</strong> Leads a property platform: verified listings, GPS-verified boundaries, escrow-protected payments, digital land passports and fractional investment features. Responsible for product direction, partner relationships and operating discipline.</p>
  <p><strong>Working style.</strong> Small teams, direct communication, ship then improve, publish the numbers, and stay reachable after launch.</p>
@@ -428,14 +437,14 @@ journey += section("milestones", "MILESTONES &amp; ACHIEVEMENTS", "What is check
 {cards([
  ("Statistics","59 live websites and apps","Built, deployed and running across Uganda: client platforms, product sites and experiments. Each one is a link you can open.","projects.html","See the projects"),
  ("Statistics","63 verified property listings","Live on Sageco Evergreen with GPS boundaries and escrow-protected payment flows, plus paid viewing bookings.","ventures.html#sageco","See the platform"),
- ("Achievement","Two companies before twenty-one","Founder of one, CEO of the other, both operating rather than planned, both built in Uganda.","ventures.html","Explore the ventures"),
+ ("Achievement","Several ventures before twenty-one","Founder of some, CEO of another, all operating rather than planned, all built in Uganda.","ventures.html","Explore the ventures"),
  ("Achievement","A platform that protects savings","Sageco Evergreen turns land verification, boundaries and payment protection into product features rather than promises.","article-land-trust.html","Read the thinking"),
 ])}
 {edit("Add awards, certificates and recognition", "List any awards, competitions, scholarships, press mentions or certificates with the year and the awarding body. If none yet, this block can stay empty or be removed: the statistics above already carry the page.")}
 ''', band=True)
 
 add("journey.html", "Journey &amp; experience | Asiimwe Derick",
-    "Asiimwe Derick's journey, career profile, work experience and milestones: two companies, 59 live websites and apps, and the timeline from Kyenjojo to Sageco Evergreen.",
+    "Asiimwe Derick's journey, career profile, work experience and milestones: several ventures, 59 live websites and apps, and the timeline from Fort Portal to Sageco Evergreen.",
     "journey timeline career experience work milestones achievements", journey)
 
 # ============================== SKILLS & CV ==============================
@@ -518,7 +527,7 @@ add("cv.html", "Asiimwe Derick — Curriculum Vitae",
 
 # ============================== VENTURES ==============================
 vent = page_head_block("Ventures", '<a href="ventures.html">Ventures</a>', "04 / BUSINESSES",
-  "Two companies.<br><em>A portfolio behind them.</em>",
+  "The ventures.<br><em>A portfolio behind them.</em>",
   "The businesses he leads, the startups and products around them, and the sectors he is moving into next.",
   [("derycode","DeryCode Technologies"),("sageco","Sageco Evergreen"),("products","Products &amp; startups"),("sectors","Real estate &amp; agriculture")])
 
@@ -657,7 +666,7 @@ imp = page_head_block("Impact", '<a href="impact.html">Impact</a>', "06 / PURPOS
 
 imp += section("leadership", "LEADERSHIP", "How I lead", f'''
 <div class="prose">
- <p>Leadership here means two companies running at once, with small teams and no layer to hide behind. It means setting direction, doing the work, and staying reachable after launch, because the person who wrote the code is also the person who answers the phone.</p>
+ <p>Leadership here means several ventures running at once, with small teams and no layer to hide behind. It means setting direction, doing the work, and staying reachable after launch, because the person who wrote the code is also the person who answers the phone.</p>
  <p><strong>What that looks like in practice:</strong> plain communication, decisions made in the open, and a bias to shipping something working rather than describing something perfect. Mistakes are named early: on Sageco Evergreen, a database permission model that would have let a stranger delete real bookings was found and rebuilt before launch, not after.</p>
  <p><strong>What he is learning:</strong> delegation, hiring, and the discipline of saying no to work that does not serve the mission.</p>
 </div>
@@ -720,6 +729,7 @@ writ += section("tech", "TECHNOLOGY ARTICLES", "Building software for Uganda", f
 writ += section("business", "BUSINESS &amp; ENTREPRENEURSHIP", "Building companies here", f'''
 {cards([
  ("Business","The fear in buying land, and what technology can do about it","Land disputes are an information problem before they are a legal one, and information problems can be engineered.","article-land-trust.html","Read the article"),
+ ("Business","Software, land and stocks: three roads to wealth","Comparing the three vehicles honestly: ceilings, liquidity, control, and how I stack them as a young entrepreneur with billion-scale ambition.","article-software-land-stocks.html","Read the essay"),
  ("Business","Why I stopped selling subscriptions to a marketplace with no buyers","A pricing lesson from Sageco Evergreen: liquidity first, subscriptions later.","writing.html","Coming next"),
  ("Business","Commission beats subscription when trust is the product","What tour operators and brokers taught me about distribution in Uganda.","writing.html","Coming next"),
 ])}
@@ -729,7 +739,7 @@ writ += section("leadership", "LEADERSHIP &amp; LIFE LESSONS", "What running thi
 {cards([
  ("Youth","You do not need permission to build","A note to young people in western Uganda waiting for a degree, a job or a title before they start.","article-youth-tech.html","Read the article"),
  ("Leadership","Character before titles","Why I would rather be trusted than impressive, and what that costs in practice.","about.html#philosophy","Read the manifesto"),
- ("Leadership","Running two companies while still in school","The honest version of the constraint: what gets dropped, what cannot, and how to protect the work that matters.","journey.html","See the journey"),
+ ("Leadership","Running several ventures while still in school","The honest version of the constraint: what gets dropped, what cannot, and how to protect the work that matters.","journey.html","See the journey"),
 ])}
 ''')
 
@@ -812,7 +822,7 @@ a3 = page_head_block("Article", '<a href="writing.html">Writing</a><span>/</span
   "You do not need<br><em>permission to build.</em>",
   "A note to young people in western Uganda who are waiting for a degree, a job or a title before they start.")
 a3 += '''<section class="section wrap"><div class="prose">
- <p>I am twenty. I am still in school. I run two companies in the hours that school leaves me. I am not telling you that to impress you; I am telling you because the usual advice, wait until you are qualified, is the reason a lot of good builders never start.</p>
+ <p>I am twenty. I am still in school. I run several ventures in the hours that school leaves me. I am not telling you that to impress you; I am telling you because the usual advice, wait until you are qualified, is the reason a lot of good builders never start.</p>
  <h3>Nobody is coming to appoint you</h3>
  <p>There is no committee that decides when you are ready. The first client does not check your certificate; they check whether the thing works. The first customer does not care how old you are; they care whether you answered the phone.</p>
  <h3>Start with something small and real</h3>
@@ -831,6 +841,33 @@ add("article-youth-tech.html", "You do not need permission to build | Asiimwe De
     "A note to young people in western Uganda waiting for a degree, a job or a title before they start building: start with something small and real, and publish the evidence.",
     "youth uganda young builders entrepreneurship advice start", a3)
 
+# ---------------------------- ARTICLE 4: software, land, stocks ----------------------------
+a4 = page_head_block("Article", '<a href="writing.html">Writing</a><span>/</span>Business', "BUSINESS · ESSAY",
+  "Software, land<br><em>and stocks.</em>",
+  "Three roads a young entrepreneur can take to serious wealth, compared honestly, and how I stack them.")
+a4 += '''<section class="section wrap"><div class="prose">
+ <p>I am twenty. I want to reach a scale that people raise an eyebrow at. So I have to be honest about the three vehicles in front of me: software, real estate and stocks. Each one builds wealth in a completely different way, and confusing them is how young people lose money.</p>
+ <h3>Software: the highest ceiling, the fastest clock</h3>
+ <p>A product can serve a hundred customers or a million with roughly the same code. Margins are high, distribution is cheap and the asset keeps working while you sleep. Of the three, it is the only one where a person with no capital can start with nothing but a laptop.</p>
+ <p>The catch is that software has no intrinsic value. It is worth what customers pay for it, and nobody pays for a demo. Every month you are re-earning the right to exist. That is why I obsess over clients who renew, not launches that trend.</p>
+ <h3>Real estate: the slowest, the most solid, the most borrowed-against</h3>
+ <p>Land does not pivot. It does not need a marketing budget. In Uganda it appreciates, it produces rent, and a bank will lend against it in a way no bank will lend against my code. It is also the asset ordinary families trust, which is exactly why fraud thrives in it.</p>
+ <p>The catch is liquidity: you cannot sell a plot on a Tuesday to make payroll, and a bad title can destroy a lifetime of savings. That is the reason Sageco Evergreen exists, verification and escrow are the product, not a feature.</p>
+ <h3>Stocks: the most liquid, the least control</h3>
+ <p>Stocks ask the least of my time and give the least of my control. I can enter and exit in minutes, and compounding quietly does the work. For a young person, it is the most forgiving place to learn how capital behaves, because mistakes are cheap and reversible.</p>
+ <p>The catch is that you own a fraction of decisions other people make. It can build wealth, but it will not build a builder. It is a place for money to wait without sleeping.</p>
+ <h3>How I stack them</h3>
+ <p>Software gives me cash flow and ownership. Real estate gives me security and leverage. Stocks give me liquidity and patience. None of them is a shortcut, and any one of them alone will cap you: a coder with no assets stays a coder, a landlord with no cash flow is trapped, and a trader with no business never learns to build.</p>
+ <p>Stacked and compounded over twenty years, from Fort Portal, that is how an ambitious young entrepreneur reaches billionaire scale without gambling everything on one bet.</p>
+ <blockquote>Smart people are doubted at the start. Results do the talking.</blockquote>
+ <p class="muted">This is how I think about building, not financial advice.</p>
+ <p><a class="btn ghost" href="writing.html">Back to all writing</a> <a class="btn ghost" href="investors.html">For investors</a></p>
+</div></section>
+'''
+add("article-software-land-stocks.html", "Software, land and stocks: three roads to wealth | Asiimwe Derick",
+    "Comparing software, real estate and stocks as wealth vehicles for a young African entrepreneur with billion-scale ambition: ceilings, liquidity, control and how Derick stacks all three.",
+    "software vs real estate vs stocks wealth young entrepreneur uganda investing ambition", a4)
+
 # ============================== VISION ==============================
 vis = page_head_block("Vision", '<a href="vision.html">Vision</a>', "08 / DIRECTION",
   "From builder to<br><em>global investor.</em>",
@@ -839,7 +876,7 @@ vis = page_head_block("Vision", '<a href="vision.html">Vision</a>', "08 / DIRECT
 
 vis += section("now", "WHERE I AM", "The starting point, honestly", f'''
 <div class="prose">
- <p>Two companies operating, one of them with paying customers and a live payment rail, 59 sites and apps built, and a school timetable to work around. Early stage, not paper stage.</p>
+ <p>Several ventures operating, one of them with paying customers and a live payment rail, 59 sites and apps built, and a school timetable to work around. Early stage, not paper stage.</p>
  <p>The gap between here and Vision 2040 is not ambition. It is capital, team and time, in that order.</p>
 </div>
 <div class="stat-row">
@@ -905,7 +942,7 @@ spk = page_head_block("Speaking", '<a href="speaking.html">Speaking &amp; media<
 spk += section("topics", "SPEAKING", "What I talk about", f'''
 <div class="cards">
  <div class="card"><span class="tag">Technology</span><h3>Software for the conditions that exist</h3><p>Offline-first design, pricing for small businesses, and why products built for Silicon Valley fail in Kyenjojo.</p></div>
- <div class="card"><span class="tag">Business</span><h3>Building before you are ready</h3><p>Running two companies at twenty: what it takes, what it costs, and the discipline of shipping something finished.</p></div>
+ <div class="card"><span class="tag">Business</span><h3>Building before you are ready</h3><p>Running several ventures at twenty: what it takes, what it costs, and the discipline of shipping something finished.</p></div>
  <div class="card"><span class="tag">Property</span><h3>Trust as infrastructure</h3><p>How verification, GPS boundaries and escrow change the risk of buying land in Uganda.</p></div>
  <div class="card"><span class="tag">Youth</span><h3>The case for building from home</h3><p>Why technology work can happen in Fort Portal, not only Kampala, and what young people need to start.</p></div>
  <div class="card"><span class="tag">AI</span><h3>AI where the connection drops</h3><p>What useful AI looks like in markets with unreliable power and data, and what to ignore.</p></div>
@@ -1028,7 +1065,7 @@ inv = page_head_block("Investors", '<a href="investors.html">For investors</a>',
   "DeryCode Technologies and Sageco Evergreen are open to angel and strategic investors who want commercial returns and measurable social impact in the same deal.",
   [("thesis","The opportunity"),("numbers","Numbers"),("ask","What I'm looking for"),("contact-inv","Talk to me")])
 
-inv += section("thesis", "THE OPPORTUNITY", "Two companies, one thesis", f'''
+inv += section("thesis", "THE OPPORTUNITY", "The ventures, one thesis", f'''
 <div class="cards">
  <div class="card"><span class="tag">DeryCode Technologies</span><h3>Software for the businesses everyone else ignores</h3><p>Offline-first systems and websites for Ugandan small businesses, sold at a price the market can pay and supported after launch. Recurring support contracts and products like DeryAccount sit on top of a delivery business that already has clients.</p></div>
  <div class="card"><span class="tag">Sageco Evergreen</span><h3>Trust as a product in a $ billions land market</h3><p>Verified listings, GPS boundaries, escrow-protected payments, land passports and fractional investment. Live with 63 listings, a production payment rail and paid viewings already running.</p></div>
@@ -1327,7 +1364,7 @@ def render():
         {"title":"Vision 2040","desc":"From builder to global investor, in his own words.","url":"vision.html#v2040","keys":"2040 investor future"},
         {"title":"Speaking topics","desc":"Six talks for universities, founder events and panels.","url":"speaking.html#topics","keys":"speaking talks keynote"},
         {"title":"Media kit bios","desc":"25, 60 and 150 word approved bios plus photos and QR.","url":"mediakit.html#bios","keys":"bio press kit"},
-        {"title":"Investment thesis","desc":"Two companies, one thesis, and how to request the deck.","url":"investors.html#thesis","keys":"invest thesis deck"},
+        {"title":"Investment thesis","desc":"The ventures, one thesis, and how to request the deck.","url":"investors.html#thesis","keys":"invest thesis deck"},
         {"title":"Download CV","desc":"One-page PDF curriculum vitae.","url":"assets/derick-asiimwe-cv.pdf","keys":"cv resume pdf download"},
     ]
     idx += extra

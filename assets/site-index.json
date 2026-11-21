@@ -13,7 +13,7 @@
  },
  {
   "title": "Journey & experience",
-  "desc": "Asiimwe Derick's journey, career profile, work experience and milestones: two companies, 59 live websites and apps, and the timeline from Kyenjojo to ",
+  "desc": "Asiimwe Derick's journey, career profile, work experience and milestones: several ventures, 59 live websites and apps, and the timeline from Fort Port",
   "url": "journey.html",
   "keys": "journey timeline career experience work milestones achievements"
  },
@@ -70,6 +70,12 @@
   "desc": "A note to young people in western Uganda waiting for a degree, a job or a title before they start building: start with something small and real, and p",
   "url": "article-youth-tech.html",
   "keys": "youth uganda young builders entrepreneurship advice start"
+ },
+ {
+  "title": "Software, land and stocks: three roads to wealth",
+  "desc": "Comparing software, real estate and stocks as wealth vehicles for a young African entrepreneur with billion-scale ambition: ceilings, liquidity, contr",
+  "url": "article-software-land-stocks.html",
+  "keys": "software vs real estate vs stocks wealth young entrepreneur uganda investing ambition"
  },
  {
   "title": "Vision, goals and roadmap to 2040",
@@ -199,7 +205,7 @@
  },
  {
   "title": "Investment thesis",
-  "desc": "Two companies, one thesis, and how to request the deck.",
+  "desc": "The ventures, one thesis, and how to request the deck.",
   "url": "investors.html#thesis",
   "keys": "invest thesis deck"
  },
