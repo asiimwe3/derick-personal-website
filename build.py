@@ -273,6 +273,12 @@ home += section("ventures-home", "WHAT I LEAD", "The ventures<br><em>I lead.</em
 <p class="side" style="color:var(--muted);font-size:14.5px">Also building <a href="ventures.html#products">Elite Members, DeryAccount, DeryCode Search, Spin &amp; Win, BuildCalc UG and Voice IDE</a>, plus client platforms across hospitality, property, retail and health.</p>
 ''')
 
+home += section("money-home", "MONEY &amp; STRATEGY", "Software, land, stocks:<br><em>three roads.</em>", cards([
+ ("Software","Highest ceiling, highest effort","One product can serve a continent, but nobody pays for a demo. Every month you re-earn the right to exist.","article-software-land-stocks.html","How I compare them"),
+ ("Real estate","Slowest, solid, most borrowable","Land appreciates, produces rent and a bank will lend against it. It cannot make payroll on a Tuesday, and a bad title can wipe out savings.","article-software-land-stocks.html","How I compare them"),
+ ("Stocks","Most liquid, least control","Minutes to enter and exit, and compounding works while you sleep. You own a fraction of decisions other people make.","article-software-land-stocks.html","How I compare them"),
+]) + '''<div class="wrap" style="padding-bottom:6px"><p class="lead">I build software for cash flow and ownership, buy land for security and leverage, and keep stocks for liquidity and patience. One alone is a gamble; three stacked and compounded is a plan. <a href="article-software-land-stocks.html">Read the full comparison and the advice I would give another twenty-year-old</a>.</p></div>''')
+
 home += section("writing-home", "LATEST THINKING", "Writing it down<br><em>as I learn it.</em>", cards([
   ("Technology","Why Ugandan software has to work offline first","Most software assumes fast internet and a card. Most Ugandan businesses have neither. Here is how I build for that reality.","article-offline-first.html","Read"),
   ("Business","Software, land and stocks: three roads to wealth","Comparing the three vehicles honestly: ceilings, liquidity, control, and how I stack them.","article-software-land-stocks.html","Read"),
@@ -858,7 +864,36 @@ a4 += '''<section class="section wrap"><div class="prose">
  <h3>Stocks: the most liquid, the least control</h3>
  <p>Stocks ask the least of my time and give the least of my control. I can enter and exit in minutes, and compounding quietly does the work. For a young person, it is the most forgiving place to learn how capital behaves, because mistakes are cheap and reversible.</p>
  <p>The catch is that you own a fraction of decisions other people make. It can build wealth, but it will not build a builder. It is a place for money to wait without sleeping.</p>
- <h3>How I stack them</h3>
+ 
+<h3>The comparison, side by side</h3>
+<div class="cmp-wrap">
+<table class="cmp">
+ <thead><tr><th></th><th>Software</th><th>Real estate</th><th>Stocks</th></tr></thead>
+ <tbody>
+ <tr><th>Ceiling</th><td>Effectively none. One product can serve a continent.</td><td>Bounded by land, rent and appreciation.</td><td>Bounded by the market, not by you.</td></tr>
+ <tr><th>Speed to first money</th><td>Weeks to months, if you sell.</td><td>Months to years, plus a title process.</td><td>Instant, but small at the start.</td></tr>
+ <tr><th>Liquidity</th><td>Low. You sell a company, not a file.</td><td>Very low. A plot cannot make payroll.</td><td>High. Minutes to exit.</td></tr>
+ <tr><th>Leverage</th><td>None from banks. Investors, if you earn them.</td><td>Strong. Banks lend against titled land.</td><td>Margin, and that is how people lose everything.</td></tr>
+ <tr><th>Control</th><td>Total, and total responsibility.</td><td>Total over your own property.</td><td>Almost none. You own other people's decisions.</td></tr>
+ <tr><th>Effort</th><td>Highest. Every month re-earned.</td><td>Low after purchase: tenants, upkeep, records.</td><td>Lowest. Compounding works while you sleep.</td></tr>
+ <tr><th>Main risk</th><td>Nobody buys, and the code is worth nothing.</td><td>A forged title or a bad location.</td><td>Panic selling at the bottom.</td></tr>
+ <tr><th>My use for it</th><td>Cash flow and ownership. The engine.</td><td>Security and borrowing power. The floor.</td><td>Liquidity and patience. The buffer.</td></tr>
+ </tbody>
+</table>
+</div>
+
+<h3>The advice I would give another twenty-year-old</h3>
+<ol class="advice">
+ <li><b>Build the engine first.</b> Software or a trade, something that produces cash every month. Assets bought before you have cash flow get sold in a panic.</li>
+ <li><b>Never borrow to speculate.</b> Borrowing against land to buy stocks is how promising young people disappear from the story. Leverage belongs on assets that produce income.</li>
+ <li><b>Verify before you pay.</b> The cheapest land in Uganda is usually cheap because the title is a problem. A search at the land office costs less than a mistake.</li>
+ <li><b>Keep a buffer you never touch.</b> Six months of costs in something liquid. It is the difference between choosing your next move and accepting any move.</li>
+ <li><b>Buy assets that pay you, then assets that appreciate.</b> Rent before speculation, dividends before hype.</li>
+ <li><b>Compound quietly for twenty years.</b> The people who look like overnight successes were usually boring for a decade. Boredom is the strategy.</li>
+ <li><b>Own, do not only earn.</b> A salary buys a lifestyle. Equity buys freedom. Take the smaller salary and the larger share when you can.</li>
+</ol>
+
+<h3>How I stack them</h3>
  <p>Software gives me cash flow and ownership. Real estate gives me security and leverage. Stocks give me liquidity and patience. None of them is a shortcut, and any one of them alone will cap you: a coder with no assets stays a coder, a landlord with no cash flow is trapped, and a trader with no business never learns to build.</p>
  <p>Stacked and compounded over twenty years, from Fort Portal, that is how an ambitious young entrepreneur reaches billionaire scale without gambling everything on one bet.</p>
  <blockquote>Smart people are doubted at the start. Results do the talking.</blockquote>
@@ -882,7 +917,7 @@ vis += section("now", "WHERE I AM", "The starting point, honestly", f'''
  <p>The gap between here and Vision 2040 is not ambition. It is capital, team and time, in that order.</p>
 </div>
 <div class="stat-row">
- <div class="stat-box"><b>2</b><span>Companies operating today</span></div>
+ <div class="stat-box"><b>3+</b><span>Ventures operating today, with more being built</span></div>
  <div class="stat-box"><b>59</b><span>Live products and sites built</span></div>
  <div class="stat-box"><b>63</b><span>Verified property listings live</span></div>
  <div class="stat-box"><b>2040</b><span>The year the vision points at</span></div>
@@ -976,7 +1011,7 @@ add("speaking.html", "Speaking, media and press | Asiimwe Derick",
 gal = page_head_block("Gallery", '<a href="gallery.html">Gallery &amp; life</a>', "10 / LIFE",
   "The human<br><em>side of the work.</em>",
   "Photos, travel, interests, habits and the books that shaped the thinking.",
-  [("photos","Photos"),("travel","Travel &amp; experiences"),("interests","Interests &amp; lifestyle"),("growth","Personal development"),("books","Books &amp; resources")])
+  [("money","Money &amp; strategy"),("photos","Photos"),("travel","Travel &amp; experiences"),("interests","Interests &amp; lifestyle"),("growth","Personal development"),("books","Books &amp; resources")])
 
 gal += section("photos", "GALLERY", "Photos", f'''
 <div class="gallery">

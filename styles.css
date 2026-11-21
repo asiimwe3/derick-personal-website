@@ -170,3 +170,15 @@ html[data-theme="dark"] .tag-role{color:var(--accent);background:var(--accent-so
 .quotes blockquote{margin:0;padding:24px 22px;border-left:2px solid var(--gold,#c08a3e);background:rgba(192,138,62,.06);border-radius:0 12px 12px 0;font:500 17px/1.5 'Space Grotesk',sans-serif}
 .quotes em{font-style:normal;color:var(--gold,#c08a3e)}
 @media(max-width:860px){.quotes{grid-template-columns:1fr}}
+
+/* comparison table + advice */
+.cmp-wrap{overflow-x:auto;margin:22px 0 30px;border:1px solid var(--line);border-radius:14px}
+.cmp{width:100%;border-collapse:collapse;font-size:.94rem;min-width:620px}
+.cmp th,.cmp td{padding:13px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.cmp thead th{background:rgba(0,0,0,.035);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+.cmp tbody th{font-weight:700;width:150px;color:var(--muted)}
+.cmp tbody tr:last-child td,.cmp tbody tr:last-child th{border-bottom:0}
+.cmp tbody tr:hover{background:rgba(0,0,0,.02)}
+.advice{padding-left:22px;margin:18px 0 26px}
+.advice li{margin-bottom:12px;line-height:1.6}
+.advice b{font-weight:700}
