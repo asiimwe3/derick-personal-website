@@ -1,33 +1,34 @@
 # Asiimwe Derick — personal-brand platform
 
-A static, multi-page personal-brand site. No framework, no build step at runtime: HTML, one shared
-stylesheet layer and one shared script. Deploys automatically to GitHub Pages from `main`.
+**Live site: https://asiimwe3.github.io/derick-personal-website/**
 
-## Structure
+Personal-brand headquarters for Asiimwe Derick: founder of DeryCode Technologies, CEO of Sageco Evergreen.
+Built as a fast static site — no framework, no runtime build, one shared stylesheet and one shared script.
 
-- `build.py` — the generator. All page content lives here; run `python3 build.py` to regenerate
-  every page, `assets/site-index.json`, `sitemap.xml` and `robots.txt`.
-- `styles.css` — the original design system (tokens, hero, sections).
-- `assets/site.css` — the platform layer (cards, timeline, search, assistant, light theme, print).
-- `assets/site.js` — theme toggle, mobile nav, site search, on-site assistant, local analytics.
-- `assets/site-index.json` — search + assistant index (generated, do not hand-edit).
-- `assets/derick-asiimwe-cv.pdf`, `assets/qr-site.png` — generated downloads.
+## Pages
+Home · About · Journey · Skills & CV · Ventures · Projects · Impact · Writing (+ 3 articles) · Vision ·
+Speaking · Gallery · Services · Investors · Contact · Media kit · Ask Derick AI · Site map ·
+Privacy · Terms · Disclaimer · 404
 
-## Editing content
+## Features
+- Clean white DeryCode-style design system, dark mode available from the header toggle
+- Client-side search over every page (press `/`)
+- "Ask Derick AI" — answers from this site's own content, no API key, works offline
+- CV as a printable page and as a PDF download
+- QR code for sharing the site in person
+- Per-page SEO: canonical URLs, Open Graph, Twitter cards, JSON-LD, sitemap.xml, robots.txt
+- Accessibility: skip link, focus states, alt text, keyboard-dismissable overlays
 
-1. Open `build.py`, find the page block (`about = page_head_block(...)` etc.).
-2. Edit the text. Blocks marked `edit(...)` in the HTML are deliberate placeholders where personal
-   facts are still needed (schools, awards, testimonials, press, events, reading list).
-3. Run `python3 build.py`, then commit and push.
+## Editing
+All content lives in `build.py`. Edit the page text there, then:
 
-## Adding a page
+```bash
+python3 build.py
+```
 
-Add `add("newpage.html", "Title", "Description", "keywords", body_html)` in `build.py`, then add it
-to `NAV` or `MORE` (or `SITEMAP_GROUPS`) so it is reachable. The sitemap and search index update
-automatically.
+That regenerates every HTML page, the search index and `sitemap.xml`.
+Styles: `styles.css` (design tokens and layout) and `assets/site.css` (component layer).
+Behaviour: `assets/site.js`.
 
-## Conventions
-
-- One `<h1>` per page, real headings below it, descriptive `alt` on every image.
-- Internal links are relative (`about.html`), anchors are real ids.
-- No third-party tracking. Analytics are local-only; see `track()` in `assets/site.js`.
+## Contact
+derickasiimwe849@gmail.com · WhatsApp +256 762 306 675

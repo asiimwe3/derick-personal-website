@@ -169,3 +169,11 @@ td{color:var(--muted)}
 .brand:hover .brand-pic{border-color:var(--accent)}
 html[data-theme="dark"] .brand-pic{border-color:var(--line-2)}
 @media(max-width:480px){.brand-pic{width:34px;height:34px}.brand{font-size:17px}}
+
+/* ---------- circular imagery ---------- */
+.avatar-fig{margin:0;display:flex;justify-content:center;align-items:center}
+.avatar{width:min(380px,86vw);aspect-ratio:1/1;object-fit:cover;object-position:50% 18%;border-radius:50%;border:6px solid var(--card);box-shadow:var(--shadow-2);display:block}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:22px}
+.gallery figure{margin:0;text-align:center}
+.gallery figure img{aspect-ratio:1/1;object-fit:cover;border-radius:50%;box-shadow:var(--shadow-1)}
+.gallery figcaption{font-size:13px;color:var(--muted);margin-top:10px}

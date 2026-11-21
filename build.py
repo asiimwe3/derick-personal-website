@@ -80,7 +80,7 @@ def head(slug, title, desc, extra_ld=None, og_type="website"):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=9">
+<link rel="stylesheet" href="styles.css?v=10">
 <link rel="stylesheet" href="assets/site.css?v=6">
 {ld_html}
 <script src="assets/site.js?v=4" defer></script>
@@ -226,7 +226,7 @@ home += f'''
     <a class="btn ghost" href="assets/derick-asiimwe-cv.pdf" download>Download CV</a>
    </div>
   </div>
-  <figure style="margin:0"><img src="assets/hoodie-laptop.webp" alt="Derick in a black DeryCode hoodie working on his laptop" width="720" height="960" style="border-radius:18px"></figure>
+  <figure class="avatar-fig"><img class="avatar" src="assets/hoodie-laptop.webp" alt="Derick in a black DeryCode hoodie working on his laptop" width="720" height="720"></figure>
  </div>
 </section>
 '''
