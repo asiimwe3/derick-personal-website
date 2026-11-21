@@ -275,6 +275,7 @@ home += section("ventures-home", "WHAT I LEAD", "The ventures<br><em>I lead.</em
 
 home += section("writing-home", "LATEST THINKING", "Writing it down<br><em>as I learn it.</em>", cards([
   ("Technology","Why Ugandan software has to work offline first","Most software assumes fast internet and a card. Most Ugandan businesses have neither. Here is how I build for that reality.","article-offline-first.html","Read"),
+  ("Business","Software, land and stocks: three roads to wealth","Comparing the three vehicles honestly: ceilings, liquidity, control, and how I stack them.","article-software-land-stocks.html","Read"),
   ("Business","The fear in buying land, and what technology can do about it","Land disputes are not only a legal problem. They are an information problem, and information can be engineered.","article-land-trust.html","Read"),
   ("Youth","You do not need permission to build","A note to young people in western Uganda who are waiting for a degree, a job or a title before they start.","article-youth-tech.html","Read"),
 ]), band=True)
