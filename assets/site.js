@@ -17,8 +17,8 @@
   }
   var saved = null;
   try { saved = localStorage.getItem(THEME_KEY); } catch (e) {}
-  var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-  applyTheme(saved || (prefersLight ? 'light' : 'dark'));
+  /* Brand default is the dark theme; light is an explicit choice the visitor makes. */
+  applyTheme(saved || 'dark');
   document.addEventListener('click', function (e) {
     var t = e.target.closest('#themeBtn');
     if (!t) return;
