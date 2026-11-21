@@ -228,7 +228,6 @@ home += f'''
   </div>
   <figure style="margin:0"><img src="assets/hoodie-laptop.webp" alt="Derick in a black DeryCode hoodie working on his laptop" width="720" height="960" style="border-radius:18px"></figure>
  </div>
- {stats([("59","live websites and apps built and running"),("63","verified property listings live on Sageco Evergreen"),("2","companies operating under his leadership"),("5","sectors served: property, hospitality, education, retail, agriculture")])}
 </section>
 '''
 
