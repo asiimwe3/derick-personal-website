@@ -985,6 +985,7 @@ gal += section("photos", "GALLERY", "Photos", f'''
  <figure><img src="assets/rooftop.webp" alt="Derick on a rooftop in Fort Portal" loading="lazy"><figcaption>Fort Portal rooftops</figcaption></figure>
  <figure><img src="assets/terrace.webp" alt="Derick on a terrace during a work session" loading="lazy"><figcaption>Between meetings</figcaption></figure>
  <figure><img src="assets/derick-laptop-resort.webp" alt="Derick holding his laptop beside the pool at a hotel in Fort Portal" loading="lazy"><figcaption>Working from the poolside, Fort Portal</figcaption></figure>
+ <figure><img src="assets/derick-laptop-evening.webp" alt="Derick in a DeryCode polo working on his laptop in front of a lit hotel at dusk" loading="lazy"><figcaption>Evening on site, Fort Portal</figcaption></figure>
 </div>
 {edit("Add video and more photos", "Add site visits, client launches, events and short clips. Photos of real work outperform posed portraits for trust, and they are the easiest content to keep current.")}
 ''')
