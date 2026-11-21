@@ -9,7 +9,7 @@
     root.setAttribute('data-theme', t);
     var btn = document.getElementById('themeBtn');
     if (btn) {
-      btn.textContent = t === 'light' ? '☾' : '☀';
+      btn.innerHTML = t === 'light' ? '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>' : '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
       btn.setAttribute('aria-label', t === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
     }
     var meta = document.querySelector('meta[name="theme-color"]');
@@ -34,7 +34,7 @@
     menu.addEventListener('click', function () {
       var open = nav.classList.toggle('open');
       menu.setAttribute('aria-expanded', String(open));
-      menu.textContent = open ? '✕' : '☰';
+      menu.innerHTML = open ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>' : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>';
     });
   }
   var more = document.querySelector('.nav-more');
