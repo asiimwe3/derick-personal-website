@@ -212,7 +212,7 @@ def add(slug, title, desc, keys, body):
     PAGES.append((slug, title, desc, keys, body))
 
 # ============================== HOME ==============================
-home = page_head_block("Home", "", "KYENJOJO, UGANDA",
+home = page_head_block("Home", "", "BORN IN FORT PORTAL · BASED IN KYENJOJO",
   "I'm Derick.<br><em>I build for people.</em>",
   "A young social entrepreneur born in Fort Portal, western Uganda. Founder of DeryCode Technologies, CEO of Sageco Evergreen, and building more ventures than one page can hold. Many businesses, one purpose: to change people's lives and turn that change into mass social impact.")
 home += f'''
