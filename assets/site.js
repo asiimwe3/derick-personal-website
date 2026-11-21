@@ -13,12 +13,12 @@
       btn.setAttribute('aria-label', t === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
     }
     var meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute('content', t === 'light' ? '#f7f4ee' : '#0b0f17');
+    if (meta) meta.setAttribute('content', t === 'light' ? '#ffffff' : '#0b0f17');
   }
   var saved = null;
   try { saved = localStorage.getItem(THEME_KEY); } catch (e) {}
-  /* Brand default is the dark theme; light is an explicit choice the visitor makes. */
-  applyTheme(saved || 'dark');
+  /* Clean white is the default; dark is one tap away. */
+  applyTheme(saved || 'light');
   document.addEventListener('click', function (e) {
     var t = e.target.closest('#themeBtn');
     if (!t) return;

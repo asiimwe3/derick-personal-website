@@ -57,10 +57,10 @@ def head(slug, title, desc, extra_ld=None, og_type="website"):
         blocks += [json.dumps(x) for x in extra_ld]
     ld_html = "".join('<script type="application/ld+json">%s</script>' % b for b in blocks)
     return f'''<!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b0f17">
+<meta name="theme-color" content="#ffffff">
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <meta name="author" content="Asiimwe Derick">
@@ -79,10 +79,10 @@ def head(slug, title, desc, extra_ld=None, og_type="website"):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=8">
-<link rel="stylesheet" href="assets/site.css?v=2">
+<link rel="stylesheet" href="styles.css?v=9">
+<link rel="stylesheet" href="assets/site.css?v=3">
 {ld_html}
-<script src="assets/site.js?v=2" defer></script>
+<script src="assets/site.js?v=3" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
