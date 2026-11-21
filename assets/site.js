@@ -115,8 +115,8 @@
   var field = document.getElementById('chatInput');
   var ANSWERS = [
     { k: ['invest', 'investment', 'raise', 'funding', 'deck', 'angel'], a: 'Derick is opening DeryCode Technologies and Sageco Evergreen to angel and strategic investors. Both are early stage and already operating. Ask for the deck at <a href="mailto:derickasiimwe849@gmail.com?subject=Investing%20in%20DeryCode%20and%20Sageco%20Evergreen">derickasiimwe849@gmail.com</a>, or read the investor page: <a href="investors.html">Investment &amp; business opportunities</a>.' },
-    { k: ['derycode', 'company', 'software', 'website', 'developer'], a: 'DeryCode Technologies is his software company in Uganda: offline-first business systems, websites and AI tools, built and supported directly. More: <a href="ventures.html">Ventures</a> and <a href="https://derycode.online" target="_blank" rel="noreferrer">derycode.online</a>.' },
-    { k: ['sageco', 'land', 'property', 'real estate'], a: 'Sageco Evergreen is the property platform he leads as CEO: verified listings, GPS boundaries, escrow-protected payments. See <a href="ventures.html">Ventures</a> and <a href="https://sageco-evergreen.vercel.app" target="_blank" rel="noreferrer">the platform</a>.' },
+    { k: ['derycode', 'company', 'companies', 'business', 'businesses', 'venture', 'ventures', 'run', 'software', 'website', 'developer'], a: 'DeryCode Technologies is his software company in Uganda: offline-first business systems, websites and AI tools, built and supported directly. More: <a href="ventures.html">Ventures</a> and <a href="https://derycode.online" target="_blank" rel="noreferrer">derycode.online</a>.' },
+    { k: ['sageco', 'land', 'property', 'real estate', 'houses', 'plots'], a: 'Sageco Evergreen is the property platform he leads as CEO: verified listings, GPS boundaries, escrow-protected payments. See <a href="ventures.html">Ventures</a> and <a href="https://sageco-evergreen.vercel.app" target="_blank" rel="noreferrer">the platform</a>.' },
     { k: ['who', 'about', 'biography', 'yourself', 'derick'], a: 'Asiimwe Derick is a young social entrepreneur from Kyenjojo, western Uganda. Founder of DeryCode Technologies and CEO of Sageco Evergreen. Read the full biography: <a href="about.html">About</a>.' },
     { k: ['age', 'born', 'old', 'birthday'], a: 'Derick was born on 9 January 2006 in Kyenjojo, Uganda.' },
     { k: ['contact', 'email', 'reach', 'whatsapp', 'call', 'phone'], a: 'Email <a href="mailto:derickasiimwe849@gmail.com">derickasiimwe849@gmail.com</a>. All inquiry routes are on the <a href="contact.html">contact page</a>.' },
@@ -136,7 +136,7 @@
     var best = null, bestScore = 0;
     ANSWERS.forEach(function (item) {
       var s = 0;
-      item.k.forEach(function (k) { if (q.indexOf(k) > -1) s += k.length; });
+      item.k.forEach(function (k) { if (q.indexOf(k) > -1) s += k.length + 2; });
       if (s > bestScore) { bestScore = s; best = item; }
     });
     if (best) return best.a;
