@@ -75,19 +75,20 @@ def head(slug, title, desc, extra_ld=None, og_type="website"):
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{desc}">
-<link rel="icon" href="assets/hoodie-laptop-sq.webp">
+<link rel="icon" href="assets/hoodie-laptop-sq.webp" type="image/webp">
+<link rel="apple-touch-icon" href="assets/hoodie-laptop-sq.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css?v=9">
-<link rel="stylesheet" href="assets/site.css?v=4">
+<link rel="stylesheet" href="assets/site.css?v=5">
 {ld_html}
 <script src="assets/site.js?v=3" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="header">
- <a class="brand" href="index.html"><b>D</b> Derick<span>.</span></a>
+ <a class="brand" href="index.html"><img src="assets/hoodie-laptop-sq.webp" alt="Asiimwe Derick" class="brand-pic" width="38" height="38"> Derick<span>.</span></a>
  <nav id="primaryNav">
   {"".join(f'<a href="{u}">{t}</a>' for u,t in NAV)}
   <div class="nav-more"><button type="button" aria-expanded="false">More ▾</button>
@@ -121,7 +122,7 @@ def foot():
 <footer class="foot">
  <div class="wrap foot-grid">
   <div>
-   <a class="brand" href="index.html" style="margin-bottom:14px"><b>D</b> Derick<span>.</span></a>
+   <a class="brand" href="index.html" style="margin-bottom:14px"><img src="assets/hoodie-laptop-sq.webp" alt="Asiimwe Derick" class="brand-pic" width="38" height="38"> Derick<span>.</span></a>
    <p>Asiimwe Derick, social entrepreneur from Kyenjojo, Uganda. Founder of DeryCode Technologies and CEO of Sageco Evergreen. Building for people, at scale.</p>
    <p><a href="mailto:{EMAIL}">{EMAIL}</a><br><a href="{WA}" target="_blank" rel="noopener">WhatsApp 0762 306 675</a></p>
   </div>
