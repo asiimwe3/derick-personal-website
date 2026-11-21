@@ -33,5 +33,8 @@ if(year) year.textContent=new Date().getFullYear();
  if(close) close.addEventListener('click',hide);
  var dot=document.getElementById('quietDot');
  if(dot) dot.addEventListener('click',function(e){ e.preventDefault(); show(true); });
- if(location.hash==='#the-number') show(false);
+ if(location.hash==='#the-number'){
+  show(false);
+  setTimeout(function(){ sec.scrollIntoView({behavior:'auto',block:'start'}); },60);
+ }
 })();
